@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face{
+    font-family: jap;
+    src: url(./go3v2.ttf);
+}
+
+body{
+    background-color: #148ab99a;
+}
+
+.galeria{
+    margin: 0;
+    display: flex;
+    height: 50vh;
+    gap: 0.1px;
+}
+
+.galeria div{
+    flex: 1;
+    background-size: cover;
+    background-position: center center;
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.galeria div:hover{
+    flex: 4;
+    filter: saturate(90%);
+    cursor: pointer;
+    
+}
+
+.galeria:hover div:not(:hover){
+   filter: opacity(50%);
+}
+
+.intro{
+    font-family: "jap";
+    text-align: center;
+    color: #f5f5f5;
+    text-shadow: 5px 5px 10px #000000;
+    padding: 50px;
+
+    
+}
+
+.principal{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #f5f5f5;
+    text-shadow: 5px 5px 10px #000000;
+    text-align: center;
+    height: 70%;
+}
+
+h2{
+    font-family: "jap";
+}
+
+main{
+    width: 70%;
+    margin: auto;
+    padding: 25px;
+    background-color: #08518d;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+button {
+    width: 30%;
+    padding: 10px;
+    background-color: #08518d;
+    color: #f5f5f5;
+    cursor: pointer;
+    font-size: small;
+}
+
+button:hover {
+    background-color: #148ab99a;
+}
